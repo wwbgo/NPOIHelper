@@ -85,13 +85,13 @@ namespace test {
             };
             var headc = new List<Column>
             {
-                new Column("test1",CellTypes.String),
-                new Column("test2",CellTypes.String),
-                new Column("test3",CellTypes.String),
-                new Column("test4",CellTypes.String),
-                new Column("test5",CellTypes.String),
-                new Column("test6",CellTypes.String),
-                new Column("test7",CellTypes.String),
+                new Column("test1test1test1test1test1"),
+                new Column("test2"),
+                new Column("test3"),
+                new Column("test4"),
+                new Column("test5"),
+                new Column("test6"),
+                new Column("test7"),
             };
             var row = new Row {
                 IsHead = true,
@@ -101,13 +101,13 @@ namespace test {
             for (var i = 0; i < 10000; i++) {
                 var bodyc = new List<Column>
                 {
-                    new Column("test1",CellTypes.String),
-                    new Column("test2",CellTypes.String),
-                    new Column("test3",CellTypes.String),
-                    new Column("test4",CellTypes.String),
-                    new Column("test5",CellTypes.String),
-                    new Column("test6",CellTypes.String),
-                    new Column("test7",CellTypes.String),
+                    new Column("test1"),
+                    new Column(i),
+                    new Column("test3"),
+                    new Column("test4"),
+                    new Column("test5"),
+                    new Column("test6"),
+                    new Column("test7"),
                 };
                 var rows = new Row {
                     Columns = bodyc

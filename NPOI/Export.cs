@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using NPOI.HSSF.UserModel;
@@ -116,7 +117,10 @@ namespace NPOIHelper {
             if (head != null) {
                 for (var i = 0; i < head.Columns.Count; i++) {
                     sheet.Cells[1,i + 1].Value = head.Columns[i].Value;
+                    sheet.Cells[1,i + 1].Style.Font.Name = "微软雅黑";
+                    sheet.Cells[1,i + 1].Style.Font.Color.SetColor(Color.Red);
                 }
+                sheet.Row(1).PageBreak = true;
 
                 var r = 2;
                 foreach (var row in body) {
@@ -132,6 +136,11 @@ namespace NPOIHelper {
                         sheet.Cells[r,i + 1].Value = row.Columns[i].Value;
                     }
                     r++;
+                }
+            }
+            if (table.BandColumns.Any()) {
+                foreach (var bandColumn in table.BandColumns) {
+                    CellSetter.SetCellDropdownlistForXlsx(sheet,bandColumn.Key,bandColumn.Value);
                 }
             }
 
