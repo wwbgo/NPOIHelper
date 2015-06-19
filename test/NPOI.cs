@@ -98,7 +98,7 @@ namespace test {
                 Columns = headc
             };
             table.Rows.Add(row);
-            for (var i = 0; i < 100000; i++) {
+            for (var i = 0; i < 10000; i++) {
                 var bodyc = new List<Column>
                 {
                     new Column("test1",CellTypes.String),

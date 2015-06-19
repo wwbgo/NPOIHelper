@@ -21,7 +21,7 @@ namespace NPOIHelper {
         public static void SetCellDropdownlist(ISheet sheet,int column,string[] datalist,bool isXlsx = false) {
             if (isXlsx) {
                 //设置生成下拉框的行和列
-                var cellRegions = new CellRangeAddressList(1,100000,column,column);
+                var cellRegions = new CellRangeAddressList(1,10000,column,column);
                 //设置 下拉框内容
                 var constraint = new XSSFDataValidationConstraint(datalist);
                 var dataValidation = new CT_DataValidation { showDropDown = true,@operator = ST_DataValidationOperator.between };
@@ -54,7 +54,7 @@ namespace NPOIHelper {
             if (isXlsx) {
                 var fCellStyle = (XSSFCellStyle)workbook.CreateCellStyle();
                 var ffont = (XSSFFont)workbook.CreateFont();
-                ffont.FontHeight = 15 * 15;
+                ffont.FontHeight = 4 * 4;
                 ffont.FontName = "宋体";
                 ffont.Color = fontColor ?? HSSFColor.Black.Index;
                 fCellStyle.SetFont(ffont);
