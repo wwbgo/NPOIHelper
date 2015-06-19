@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docoticpdf", "docoticpdf\docoticpdf.csproj", "{543F8F1B-3BE3-48B3-9285-5A0049F2C9DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{E66EAABA-80A8-4846-8F14-DE7B2E2851E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOIHelper", "NPOI\NPOIHelper.csproj", "{0F7FA387-AA89-46DC-8B0A-6045222D3ACA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{543F8F1B-3BE3-48B3-9285-5A0049F2C9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543F8F1B-3BE3-48B3-9285-5A0049F2C9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543F8F1B-3BE3-48B3-9285-5A0049F2C9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543F8F1B-3BE3-48B3-9285-5A0049F2C9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E66EAABA-80A8-4846-8F14-DE7B2E2851E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66EAABA-80A8-4846-8F14-DE7B2E2851E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66EAABA-80A8-4846-8F14-DE7B2E2851E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66EAABA-80A8-4846-8F14-DE7B2E2851E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7FA387-AA89-46DC-8B0A-6045222D3ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7FA387-AA89-46DC-8B0A-6045222D3ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7FA387-AA89-46DC-8B0A-6045222D3ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7FA387-AA89-46DC-8B0A-6045222D3ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
